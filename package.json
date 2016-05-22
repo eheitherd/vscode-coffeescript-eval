@@ -2,7 +2,7 @@
   "name": "vscode-coffeescript-eval",
   "displayName": "CoffeeScript Eval",
   "description": "Evaluate selected CoffeeScript code",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Eheitherd Ceres",
   "publisher": "eheitherd",
   "engines": {
