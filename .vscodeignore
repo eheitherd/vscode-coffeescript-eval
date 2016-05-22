@@ -1,0 +1,7 @@
+.vscode/**
+src/**
+test/**
+.gitignore
+jsconfig.json
+.travis.yml
+gulpfile.ls

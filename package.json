@@ -1,0 +1,78 @@
+{
+  "name": "vscode-coffeescript-eval",
+  "displayName": "CoffeeScript Eval",
+  "description": "Evaluate selected CoffeeScript code",
+  "version": "0.0.1",
+  "author": "Eheitherd Ceres",
+  "publisher": "eheitherd",
+  "engines": {
+    "vscode": "^1.0.0",
+    "node": ">= 0.11.13"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "coffeescript",
+    "eval",
+    "visual studio code",
+    "vs code",
+    "extension"
+  ],
+  "galleryBanner": {
+    "coloe": "#e8fff7",
+    "theme": "light"
+  },
+  "main": "./lib/extension",
+  "activationEvents": [
+    "onCommand:extension.coffeescript-eval"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.coffeescript-eval",
+        "title": "CoffeeScript Eval"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.coffeescript-eval",
+        "key": "ctrl+k ctrl+e",
+        "when": "editorTextFocus && editorLangId == 'coffeescript'"
+      }
+    ]
+  },
+  "dependencies": {
+    "coffee-script": "^1.10.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "del": "^2.2.0",
+    "glob-all": "^3.0.3",
+    "livescript": "^1.5.0",
+    "prelude-ls": "^1.1.2",
+    "gulp": "^3.9.1",
+    "gulp-livescript": "^3.0.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-util": "^3.0.7",
+    "ls-lint": "^0.1.0",
+    "vinyl-paths": "^2.1.0",
+    "vscode": "^0.11.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eheitherd/vscode-coffeescript-eval.git"
+  },
+  "scripts": {
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "build-test": "gulp build-test",
+    "watch": "gulp watch",
+    "test": "node ./node_modules/vscode/bin/test",
+    "lint": "ls-lint \"./src/**/*.ls\"",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "vscode:prepublish": "gulp build"
+  }
+}
