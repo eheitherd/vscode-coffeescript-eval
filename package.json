@@ -43,14 +43,14 @@
     ]
   },
   "dependencies": {
-    "coffee-script": "^1.10.0"
+    "coffee-script": "^1.10.0",
+    "prelude-ls": "^1.1.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "del": "^2.2.0",
     "glob-all": "^3.0.3",
     "livescript": "^1.5.0",
-    "prelude-ls": "^1.1.2",
     "gulp": "^3.9.1",
     "gulp-livescript": "^3.0.0",
     "gulp-newer": "^1.1.0",
